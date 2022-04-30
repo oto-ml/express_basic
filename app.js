@@ -13,8 +13,11 @@ app.get('/launchx', (req, res) => {
 app.get('/explorersInNode', (req, res) => {
     const explorer = {name: "Explorer", msg: "Hello"}
     res.send(explorer)
-}
-)
+})
+
+app.get('/explorers/:explorerName', (req, res) => {
+    res.send(req.params)
+})
 
 app.listen(port, () => {
     console.log("Server Listo")
