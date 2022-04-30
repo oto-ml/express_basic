@@ -9,3 +9,7 @@ app.get('/', (req, res) => {
 app.get('/launchx', (req, res) => {
     res.send('Bienvenidos a LaunchX')
 })
+
+app.listen(port, () => {
+    console.log("Server Listo")
+})
